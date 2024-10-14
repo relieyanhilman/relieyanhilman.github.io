@@ -1,0 +1,201 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif; /* Use for body text */
+    background-color: #f4e4c1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Use for headings */
+}
+
+header {
+    text-align: center;
+    background-color: #8c7a6b;
+    color: #fdf6e3;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #b69b7c;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fdf6e3;
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #b69b7c;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+a {
+    color: #b69b7c; /* Muted pink-brown color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8c7a6b; /* Darker shade on hover */
+}
+
+section {
+    margin: 40px 20px;
+}
+
+h2 {
+    color: #8c7a6b;
+    border-bottom: 2px solid #b69b7c;
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #8c7a6b;
+    color: #fdf6e3;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.project-card-container { /* Modified */
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 1em;
+    overflow-x:scroll; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling when arrows are clicked */
+    transition: all 0.3s ease; /* Add smooth transition */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;  /* For Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, and newer Edge */
+.project-card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.project-card { /* Modified */
+    background-color: #fdf6e3;
+    border: 1px solid #b69b7c;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    min-width: 300px; /* Ensure each card has a minimum width */
+    margin-top: 0.5em;
+}
+
+.project-label {
+    position: absolute;
+    top: 10px; /* Slight padding from the top */
+    left: 10px; /* Slight padding from the left */
+    background-color: #8c7a6b; /* Vintage color to match theme */
+    color: #fdf6e3; /* Text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.project-card:hover { /* Modified */
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 { /* Modified */
+    color: #8c7a6b;
+    margin-bottom: 10px;
+}
+
+.project-card p { /* Modified */
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-card a { /* Modified */
+    text-decoration: none;
+    color: #b69b7c;
+    font-weight: bold;
+}
+
+.project-card a:hover { /* Modified */
+    color: #8c7a6b;
+}
+
+.project-technologies { /* Modified */
+    margin-top: 15px; /* Add some space above the technologies section */
+    text-align: center; /* Center align the icons for a cleaner look */
+    margin-bottom: 15px;
+}
+
+.project-technologies h4 { /* Modified */
+    margin-bottom: 8px;
+    color: #8c7a6b; /* Consistent vintage color for section title */
+    font-weight: bold;
+    font-size: 16px; /* Slightly larger font size for better emphasis */
+}
+
+.tech-icons { /* Modified */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+}
+
+.tech-icons i { /* Modified */
+    font-size: 24px; /* Size of the icons */
+    color: #8c7a6b; /* Vintage color for the icons */
+    transition: transform 0.2s, color 0.2s; /* Hover effect */
+}
+
+.tech-icons i:hover { /* Modified */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    color: #b69b7c; /* Change color on hover */
+}
+
+.scroll-btn {
+    background-color: #8c7a6b;
+    color: #fdf6e3;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.scroll-btn:hover {
+    background-color: #b69b7c;
+}
+
+.project-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items: center;
+    column-gap: 0.5em;
+}

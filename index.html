@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relieyan Hilman - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script>
+        function scrollLeft1() {
+            const container = document.getElementById('scroll-container');
+            container.scrollBy({ left: -300, behavior: 'smooth' }); // Scroll 300px to the left
+        }        
+        function scrollRight() {
+            const container = document.getElementById('scroll-container');
+            container.scrollBy({ left: 300, behavior: 'smooth' }); // Scroll 300px to the right
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Relieyan Hilman</h1>
+        <p>Software Engineer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p align="justify">Graduating with a Bachelor of Engineering in Information System and Technology 
+            from Institut Teknologi Bandung, I bring a strong technical background from 
+            my time as an IT Consultant at Kyndryl. While my experience spans IT Governance 
+            and Compliance, my primary focus is now on creating software solutions that are 
+            both efficient and adaptable to the ever-evolving demands of users and businesses. 
+            I am passionate about building systems that can grow alongside the needs of the 
+            organization, and I thrive on addressing complex challenges by crafting solutions 
+            that are not only robust but also capable of driving meaningful improvements. 
+            I look forward to applying my expertise in environments where innovation and 
+            long-term scalability are key.</p>
+    </section>
+
+    <section id="projects">
+        <!-- Left arrow -->
+
+        <h2>Projects</h2>
+
+        <div class="project-flexbox">
+
+            <button class="scroll-btn" onclick="scrollLeft1()">&#10094;</button> <!-- Left arrow icon -->
+
+            <div class="project-card-container" id="scroll-container"> <!-- Modified -->
+
+                <div class="project-card"> <!-- Modified -->
+                    <div class="project-label">Independence</div> <!-- Label added -->
+                    <h3>BadminHub</h3>
+                    <p>Brief description of the project and technologies used.</p>
+                    <div class="project-technologies"> <!-- Modified -->
+                        <h4>Languages and Technologies:</h4>
+                        <div class="tech-icons">
+                            <i class="fab fa-python"></i> <!-- Python icon -->
+                            <i class="fab fa-java"></i> <!-- Java icon -->
+                            <i class="fab fa-node-js"></i> <!-- Node.js icon -->
+                        </div>
+                    </div>
+                    <a href="project-link-1" target="_blank">View Project</a>
+                </div>
+                <div class="project-card"> <!-- Modified -->
+                    <div class="project-label">Course</div> <!-- Label added -->
+                    <h3>Hiji Card</h3>
+                    <p>Brief description of the project and technologies used.</p>
+                    <div class="project-technologies"> <!-- Modified -->
+                        <h4>Languages and Technologies:</h4>
+                        <div class="tech-icons">
+                            <i class="fab fa-html5"></i> <!-- HTML5 icon -->
+                            <i class="fab fa-css3-alt"></i> <!-- CSS3 icon -->
+                            <i class="fab fa-js-square"></i> <!-- JavaScript icon -->
+                            <i class="fab fa-react"></i> <!-- React icon -->
+                        </div>
+                    </div>
+                    <a href="project-link-2" target="_blank">View Project</a>
+                </div>
+                <div class="project-card"> <!-- Modified -->
+                    <div class="project-label">Course</div> <!-- Label added -->
+                    <h3>Smart Parking IoT</h3>
+                    <p>Brief description of the project and technologies used.</p>
+                    <a href="project-link-3" target="_blank">View Project</a>
+                </div>
+                <div class="project-card"> <!-- Modified -->
+                    <div class="project-label">Independence</div> <!-- Label added -->
+                    <h3>Edversity</h3>
+                    <p>Brief description of the project and technologies used.</p>
+                    <a href="project-link-3" target="_blank">View Project</a>
+                </div>
+                <div class="project-card"> <!-- Modified -->
+                    <div class="project-label">Course</div> <!-- Label added -->
+                    <h3>Hayu Nubes</h3>
+                    <p>Brief description of the project and technologies used.</p>
+                    <a href="project-link-3" target="_blank">View Project</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div> <!-- Modified -->
+
+        <!-- Right arrow -->
+        <button class="scroll-btn" onclick="scrollRight()">&#10095;</button> <!-- Right arrow icon -->
+
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <h2>Skillset</h2>
+        <p>List your technical skills and programming languages.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: relieyanhilman93@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/relieyanhilman" target="_blank">LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Relieyan Hilman. All rights reserved.</p>
+    </footer>
+</body>
+</html>
