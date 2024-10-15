@@ -1,0 +1,103 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Body text font */
+    background-color: #f4e4c1; /* Vintage beige background */
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background-color: #8c7a6b; /* Vintage brown background */
+    color: #fdf6e3; /* Light text color */
+    padding: 20px 0;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    background-color: #b69b7c; /* Lighter brown background for the nav */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fdf6e3; /* Light color for nav text */
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #b69b7c;
+    z-index: 1000; /* Keep nav on top */
+}
+
+/* Section Styles */
+section {
+    margin: 40px 20px;
+}
+
+h2 {
+    color: #8c7a6b; /* Darker vintage brown for headings */
+    border-bottom: 2px solid #b69b7c; /* Bottom border to emphasize */
+    padding-bottom: 5px;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Code and Pre styles for the code block in 'Setup' */
+pre {
+    background-color: #fdf6e3; /* Light background for code */
+    padding: 10px;
+    border: 1px solid #b69b7c; /* Soft border around code */
+    border-radius: 4px;
+    margin: 15px 0;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+}
+
+/* Link Styles */
+a {
+    color: #b69b7c; /* Muted pink-brown for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8c7a6b; /* Darker vintage brown on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #8c7a6b; /* Vintage brown background */
+    color: #fdf6e3; /* Light text */
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

@@ -94,6 +94,9 @@ footer {
 }
 
 .project-card { /* Modified */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #fdf6e3;
     border: 1px solid #b69b7c;
     border-radius: 8px;
@@ -151,10 +154,10 @@ footer {
 }
 
 .project-technologies h4 { /* Modified */
-    margin-bottom: 8px;
     color: #8c7a6b; /* Consistent vintage color for section title */
     font-weight: bold;
     font-size: 16px; /* Slightly larger font size for better emphasis */
+    margin: 0;
 }
 
 .tech-icons { /* Modified */
@@ -170,9 +173,11 @@ footer {
     transition: transform 0.2s, color 0.2s; /* Hover effect */
 }
 
-.tech-icons i:hover { /* Modified */
-    transform: scale(1.2); /* Slightly enlarge icon on hover */
-    color: #b69b7c; /* Change color on hover */
+.tech-logo {
+    width: 24px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: 24px;
+    vertical-align: middle;
+    color: #8c7a6b; /* Vintage color for the icons */
 }
 
 .scroll-btn {
@@ -198,4 +203,8 @@ footer {
     justify-content:end;
     align-items: center;
     column-gap: 0.5em;
+}
+
+.project-description{
+    text-align: justify;
 }
