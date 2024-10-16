@@ -148,9 +148,11 @@ footer {
 }
 
 .project-technologies { /* Modified */
+    display: flex;
+    flex-direction: column;
     margin-top: 15px; /* Add some space above the technologies section */
     text-align: center; /* Center align the icons for a cleaner look */
-    margin-bottom: 15px;
+    row-gap: 10px;
 }
 
 .project-technologies h4 { /* Modified */
@@ -175,7 +177,6 @@ footer {
 
 .tech-logo {
     width: 24px; /* Sesuaikan ukuran sesuai kebutuhan */
-    height: 24px;
     vertical-align: middle;
     color: #8c7a6b; /* Vintage color for the icons */
 }
