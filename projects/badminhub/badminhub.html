@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BadminHub - Project Documentation</title>
+    <link rel="shortcut icon" type="x-icon" href="../../images/web_icon.jpg" />
+    <link rel="stylesheet" href="badminhub.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>BadminHub - Badminton Event Management</h1>
+      <p>Project Documentation</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#table-of-contents">Table of Contents</a></li>
+      </ul>
+    </nav>
+
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p align="justify">
+        BadminHub is a mobile application designed to assist badminton event
+        administrators with player attendance management, player pairing (for
+        double matches), and financial flow management. It streamlines event
+        handling, making it easier for admins to organize badminton events and
+        ensure smooth operations.
+      </p>
+    </section>
+
+    <section id="technologies">
+      <h2>Technologies</h2>
+      <ul>
+        <li>
+          <strong>React Native</strong>: Front-end framework for building mobile
+          applications.
+        </li>
+        <li>
+          <strong>NodeJS</strong>: Back-end JavaScript runtime for handling
+          server-side logic.
+        </li>
+        <li>
+          <strong>MySQL</strong>: Database system for managing player and event
+          data.
+        </li>
+      </ul>
+    </section>
+
+    <section id="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li>
+          <a href="#illustration-scope-of-functionalities"
+            >Illustration &amp; Scope of Functionalities</a
+          >
+        </li>
+        <li><a href="#examples-of-use">Examples of Use</a></li>
+        <li><a href="#project-status">Project Status</a></li>
+        <li><a href="#sources">Sources</a></li>
+        <li><a href="#acknowledgements">Acknowledgements</a></li>
+      </ol>
+    </section>
+
+    <section id="illustration-scope-of-functionalities">
+      <h2>Illustration &amp; Scope of Functionalities</h2>
+      <p>BadminHub offers three core functionalities:</p>
+      <ol>
+        <li>Player Attendance Management</li>
+        <li>Player Pairing (for double matches)</li>
+        <li>Financial Flow Management</li>
+      </ol>
+      <p>
+        Below are some visual representations of the app&#39;s functionalities:
+      </p>
+      <p>BadminHub offers three core functionalities:</p>
+      <ol>
+        <li>
+          <a href="#1-player-attendance-management"
+            >Player Attendance Management</a
+          >
+        </li>
+        <li>
+          <a href="#2-player-pairing-for-double-matches">Player Pairing</a>
+        </li>
+        <li>
+          <a href="#3-financial-flow-management">Financial Flow Management</a>
+        </li>
+      </ol>
+      <h3 id="1-player-attendance-management">
+        1. Player Attendance Management
+      </h3>
+      <ul>
+        <li>
+          <p>
+            <strong>Login and Registration</strong>: Users can log in with
+            credentials provided by the app. If they are not registered, they
+            can sign up via the form link on the login screen.
+          </p>
+          <p align="center">
+            <img src="./asset-doc/login_form.jpg" width="200" />
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Dashboard</strong>: After logging in, users are directed to
+            the dashboard. New users can add players either through the
+            &#39;create player&#39; feature or the &#39;import player&#39;
+            feature.
+          </p>
+          <ul>
+            <li>
+              <p>
+                <strong>Create Player</strong>: Add individual player details.
+              </p>
+              <p align="center">
+                <img
+                  src="./asset-doc/create_player-player_list.jpg"
+                  width="200"
+                />
+                <img
+                  src="./asset-doc/create_player-create_player_form.jpg"
+                  width="200"
+                />
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Import Player</strong>: Import a list of players into
+                the system.
+              </p>
+              <p align="center">
+                <img
+                  src="./asset-doc/import_player-dashboard.jpg"
+                  width="200"
+                />
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong>Events</strong>: Users can access their badminton events via
+            the &#39;Events&#39; section in the bottom navigation. If there are
+            no events, users can create new ones using the &#39;add event&#39;
+            feature.
+          </p>
+          <p align="center">
+            <img src="./asset-doc/view_events-event_list.jpg" width="200" />
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Event Days and Players</strong>: Users can view daily events
+            and player data by navigating to the two tabs—&#39;event days&#39;
+            and &#39;event players&#39;—within an event.
+          </p>
+          <p align="center">
+            <img src="./asset-doc/view_event_days-event_days.jpg" width="200" />
+            <img
+              src="./asset-doc/view_event_players-event_players.jpg"
+              width="200"
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Match and Player List</strong>: Users can manage player
+            attendance and track match details through the &#39;match list&#39;
+            and &#39;player list&#39; tabs.
+          </p>
+          <p align="center">
+            <img src="./asset-doc/view_matches-match_list.jpg" width="200" />
+            <img src="./asset-doc/view_players-player_list.jpg" width="200" />
+          </p>
+        </li>
+      </ul>
+      <h4 id="player-attendance-features-">Player Attendance Features:</h4>
+      <ul>
+        <li>
+          Mark player attendance through the &#39;apply player&#39; feature.
+        </li>
+        <li>
+          View player details such as name, level, status (idle, playing,
+          leave), arrival time, number of matches played, shuttlecocks used,
+          payment status, and demographic information.
+        </li>
+        <li>
+          Update player status by adding them to a match, marking them as
+          &#39;leave&#39;, or ending their session.
+        </li>
+        <li>
+          Filter players by level, matches played, payment status, gender, and
+          age range.
+        </li>
+        <li>
+          Search for players by name, alias, or contact number.
+        </li>
+        <p align="center">
+            <img src="./asset-doc/apply_players-player_list.jpg" width="200" />
+            <img
+              src="./asset-doc/applied_players-player_list.jpg"
+              width="200"
+            />
+            <img src="./asset-doc/filter_options-player_list.jpg" width="200" />
+            <img src="./asset-doc/search_players-player_list.jpg" width="200" />
+          </p>
+      </ul>
+      <h3 id="2-player-pairing-for-double-matches">
+        2. Player Pairing (for double matches)
+      </h3>
+      <p>
+        The second core feature is focused on Player Pairing for badminton
+        doubles matches. The main screens related to this feature are the
+        &#39;Player List&#39; screen and the &#39;Match List&#39; screen.
+      </p>
+      <ul>
+        <li>
+          <p>
+            On the &#39;Player List&#39; screen, users can view all players
+            participating in the open badminton session for that day. Users can
+            also filter players based on the following attributes:
+          </p>
+          <ul>
+            <li>Player Level: “A+”, “A”, “B+”, “B”, “C+”, “C”</li>
+            <li>Player Status: “Idle,” “Playing,” “Leave,” “In-Draft”</li>
+            <li>Number of Matches Played</li>
+            <li>Payment Status: “Paid,” “Unpaid”</li>
+            <li>Gender: “Male,” “Female”</li>
+            <p align="center">
+                <img
+                  src="./asset-doc/player-pairing/filter_options-player_list.jpg"
+                  width="200"
+                />
+                <img
+                  src="./asset-doc/player-pairing/player_list_filtered-player_list.jpg"
+                  width="200"
+                />
+            </p>
+          </ul>
+        </li>
+        <li>
+          <p>
+            After reviewing the players&#39; conditions and data, users can
+            navigate to the &#39;Match List&#39; screen and initiate player
+            pairing by clicking the &#39;add match&#39; button.
+          </p>
+          <p align="center">
+            <img
+              src="./asset-doc/player-pairing/match_list_empty-match_list.jpg"
+              width="200"
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            Next, users will proceed to the &#39;Add New Match&#39; screen,
+            where they can start pairing players by entering the following
+            attributes:
+          </p>
+          <ul>
+            <li>Court: Select from available courts at the venue.</li>
+            <li>Player: Only players with an “idle” status are shown.</li>
+            <li>
+                Note: An optional field for additional comments. Users can
+                select players either by picking them directly or by searching
+                for them.
+            </li>
+            <p align="center">
+                <img
+                  src="./asset-doc/player-pairing/add_new_match_empty-add_match.jpg"
+                  width="200"
+                />
+                <img
+                  src="./asset-doc/player-pairing/adding_match_scenario-add_match.gif"
+                  width="200"
+                />
+              </p>
+          </ul>
+        </li>
+        <li>
+          <p>
+            Once the necessary attributes are filled in, users can decide
+            whether to start the match immediately or save it as a draft.
+          </p>
+        </li>
+          <p align="center">
+            <img
+              src="./asset-doc/player-pairing/add_new_match_filledin-add_match.jpg"
+              width="200"
+            />
+            <img
+              src="./asset-doc/player-pairing/added_match-match_list.jpg"
+              width="200"
+            />
+          </p>
+        <li>
+          <p>
+            Users can view the arranged matches and their statuses on the
+            &#39;Match List&#39; screen. Users also can search the match based
+            on the player name/ alias
+          </p>
+        </li>
+        <p align="center">
+            <img
+              src="./asset-doc/player-pairing/multiple_value-match_list.jpg"
+              width="200"
+            />
+            <img
+              src="./asset-doc/player-pairing/search_match-match_list.jpg"
+              width="200"
+            />
+        </p>
+        <li>
+          <p>
+            Additionally, users can see each player&#39;s status (whether they
+            are playing or not) on the &#39;Player List&#39; screen.
+          </p>
+        </li>
+        <p align="center">
+            <img
+              src="./asset-doc/player-pairing/status_player-player_list.jpg"
+              width="200"
+            />
+        </p>
+        <li>
+          <p>
+            If a user chooses to save a match as a draft, its status will be
+            ‘draft.’ Users can change the match status to ‘playing’ by pressing
+            the &#39;start match&#39; button.
+          </p>
+        </li>
+        <p align="center">
+            <img
+              src="./asset-doc/player-pairing/added_match-match_list.jpg"
+              width="200"
+            />
+            <img
+              src="./asset-doc/player-pairing/started_match-match_list.jpg"
+              width="200"
+            />
+          </p>
+        <li>
+          <p>
+            When a match concludes, users can end it by pressing the &#39;end
+            match&#39; button, which will generate an “end time” attribute,
+            allowing users to view the overall details and information related
+            to the match.
+          </p>
+        </li>
+        <p align="center">
+            <img
+              src="./asset-doc/player-pairing/ended_match-match_list.jpg"
+              width="200"
+            />
+          </p>
+      </ul>
+      <h3 id="3-financial-flow-management">3. Financial Flow Management</h3>
+      <p>
+        In this feature, users can manage financial flows by tracking each
+        badminton activity or by manually adding cash flow items.
+      </p>
+      <ul>
+        <li>
+          Essentially, every badminton event related to finances is
+          automatically handled and added to the cash flow (configured on the
+          backend). These events include adding or modifying player memberships
+          and payments for each player&#39;s badminton session. However, certain
+          events, like procuring shuttlecocks and renting courts, need to be
+          manually added to the cash flow.
+        </li>
+        <li>
+            Below are example snapshots of the cash flow screen and the add cash
+            flow screen.
+        </li>          
+          <p align="center">
+            <img
+              src="./asset-doc/financial-flow-management/cashflow_all-cashflow_list.jpg"
+              width="200"
+            />
+            <img
+              src="./asset-doc/financial-flow-management/cashflow_income-cashflow_list.jpg"
+              width="200"
+            />
+            <img
+              src="./asset-doc/financial-flow-management/cashflow_expense-cashflow_list.jpg"
+              width="200"
+            />
+          </p>
+
+          <p align="center">
+            <img
+              src="./asset-doc/financial-flow-management/cashflow_add_default-add_cashflow.jpg"
+              width="200"
+            />
+            <img
+              src="./asset-doc/financial-flow-management/cashflow_add_income-add_cashflow.jpg"
+              width="200"
+            />
+            <img
+              src="./asset-doc/financial-flow-management/cashflow_add_expense-add_cashflow.jpg"
+              width="200"
+            />
+          </p>
+
+        <li>
+          <p>
+            The subscribe feature is used to mark a player as a member for a
+            specific badminton session period, while the resubscribe feature is
+            used to renew a player&#39;s membership. This membership status will
+            be useful for indicating the payment status of a player in each
+            badminton session.
+          </p>
+        </li>
+        <li>
+          <p>
+            Below are snapshots and a scenario demonstrating the setup process
+            for player memberships using subscribe and resubscribe.
+          </p>
+          <ul>
+            <li>
+                First, on the Event List screen, a player will be subscribed
+            </li>
+            <p align="center">
+                <img
+                  src="./asset-doc/financial-flow-management/sub-resub-feat/1.jpg"
+                  width="200"
+                />
+              </p>
+            <li>
+              
+                A pop-up modal will appear to input the necessary data,
+                including the nominal amount.
+              
+
+            </li>
+            <p align="center">
+                <img
+                  src="./asset-doc/financial-flow-management/sub-resub-feat/2.jpg"
+                  width="200"
+                />
+              </p>
+            <li>
+              
+                Once the player is subscribed, the user can view the membership
+                period and the remaining matches the player is eligible for.
+              
+
+            </li>
+            <p align="center">
+                <img
+                  src="./asset-doc/financial-flow-management/sub-resub-feat/3.jpg"
+                  width="200"
+                />
+              </p>
+            <li>
+              
+                If the user switches to the cashflow screen, they will see the
+                income cashflow, which includes the subscribed player’s data.
+              
+
+            </li>
+            <p align="center">
+                <img
+                  src="./asset-doc/financial-flow-management/sub-resub-feat/4.jpg"
+                  width="200"
+                />
+              </p>
+            <li>
+              
+                If the user wants to add the subscribed player to a badminton
+                session event, the player will automatically be marked as
+                &quot;paid,&quot; and their remaining play count will decrease
+                by one.
+              
+
+            </li>
+            <p align="center">
+                <img
+                  src="./asset-doc/financial-flow-management/sub-resub-feat/5.jpg"
+                  width="200"
+                />
+                <img
+                  src="./asset-doc/financial-flow-management/sub-resub-feat/6.jpg"
+                  width="200"
+                />
+                <img
+                  src="./asset-doc/financial-flow-management/sub-resub-feat/7.jpg"
+                  width="200"
+                />
+              </p>
+          </ul>
+        </li>
+      </ul>
+      <!-- Add detailed descriptions and images for each feature -->
+    </section>
+
+    <section id="examples-of-use">
+      <h2>Examples of Use</h2>
+      <ul>
+        <li>
+          <strong>Managing Event Attendance</strong>: Track player attendance
+          and update their status.
+        </li>
+        <li>
+          <strong>Financial Management</strong>: Manage and oversee event
+          finances.
+        </li>
+        <li>
+          <strong>Match Pairing</strong>: Pair players for doubles matches based
+          on skill levels.
+        </li>
+      </ul>
+    </section>
+
+    <section id="project-status">
+      <h2>Project Status</h2>
+      <p>The project is currently under development.</p>
+    </section>
+
+    <section id="sources">
+      <h2>Sources</h2>
+      <p>
+        The idea for this application arose from our team’s personal experiences
+        and frustrations in managing badminton events.
+      </p>
+    </section>
+
+    <section id="acknowledgements">
+      <h2>Acknowledgements</h2>
+      <ul>
+        <li>@relieyanhilman</li>
+        <li>scriptsweet</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Relieyan Hilman. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
