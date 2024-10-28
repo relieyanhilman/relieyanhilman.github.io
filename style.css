@@ -108,11 +108,7 @@ footer {
     margin-top: 0.5em;
 }
 
-@media (max-width: 700px) {
-  .project-card {
-    min-width:200px;
-  }
-}
+
 
 .project-label {
     position: absolute;
@@ -196,6 +192,12 @@ footer {
     z-index: 1000;
     transition: background-color 0.3s ease;
 
+}
+
+@media (max-width: 700px) {
+  .project-card {
+    min-width:200px;
+  }
 }
 
 
