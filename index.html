@@ -10,18 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <script>
-        function scrollLeft1() {
-            const container = document.getElementById('scroll-container');
-            container.scrollBy({ left: -260, behavior: 'smooth' }); // Scroll 300px to the left
-        }        
 
-        function scrollRight() {
-            const container = document.getElementById('scroll-container');
-            container.scrollBy({ left: 260, behavior: 'smooth' }); // Scroll 300px to the right
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -70,15 +61,15 @@
 
                 <div class="project-card"> <!-- Modified -->
                     <div class="project-label">Independence</div> <!-- Label added -->
-                    <div>
+                    <div class="mt-4">
                         <h3>BadminHub</h3>
-                        <p class="project-description">BadminHub is a mobile application designed to assist badminton event administrators 
+                        <p class="project-description">Mobile application designed to assist badminton event administrators 
                             with player attendance management, player pairing (for double matches), and financial 
                             flow management.</p>
                     </div>
                     <div class="project-technologies"> <!-- Modified -->
                         <div>
-                            <h4>Languages and Technologies:</h4>
+                            <h4>Tools and Technologies:</h4>
                             <div class="tech-icons">
                                 <i class="fab fa-react"></i> <!-- Python icon -->
                                 <i class="fab fa-node-js"></i> <!-- Java icon -->
@@ -91,13 +82,13 @@
 
                 <div class="project-card"> <!-- Modified -->
                     <div class="project-label">Course</div> <!-- Label added -->
-                    <div>
+                    <div class="mt-4">
                         <h3>Hiji Card</h3>
-                        <p class="project-description">HIJI is a card game inspired by the classic 'UNO,' with added unique rules and its own distinct twists.</p>
+                        <p class="project-description">Card game inspired by the classic 'UNO,' with added unique rules and its own distinct twists.</p>
                     </div>
                     <div class="project-technologies"> <!-- Modified -->
                         <div>
-                            <h4>Languages and Technologies:</h4>
+                            <h4>Tools and Technologies:</h4>
                             <div class="tech-icons">
                                 <i class="fab fa-java"></i> <!-- HTML5 icon -->
                             </div>
@@ -106,17 +97,17 @@
                     </div>
                 </div>
 
-                <div class="project-card"> <!-- Modified -->
-                    <div class="project-label">Independence</div> <!-- Label added -->
-                    <div>
-                        <h3>Design and Development of An Integrated Internet of Things-Based Smart Parking Payment System</h3>
+                <div class="project-card"> 
+                    <div class="project-label">Independence</div> 
+                    <div class="mt-4">
+                        <h3 class="fs-5">Design and Development of An Integrated Internet of Things-Based Smart Parking Payment System</h3>
                         <p class="project-description">Develop a seamless parking payment
                             system that utilizes backend processing and IoT technologies to create a smooth
                             payment experience.</p>
                     </div>
-                    <div class="project-technologies"> <!-- Modified -->
+                    <div class="project-technologies"> 
                         <div>
-                            <h4>Languages and Technologies:</h4>
+                            <h4>Tools and Technologies:</h4>
                             <div class="tech-icons">
                                 <img src="images/arduino.svg" alt="Arduino Logo" class="tech-logo" style="width: 35px; margin-right: -5px;">
                                 <i class="fab fa-node-js"></i>
@@ -130,14 +121,14 @@
 
                 <div class="project-card"> <!-- Modified -->
                     <div class="project-label">Independence</div> <!-- Label added -->
-                    <div>
+                    <div class="mt-4">
                         <h3>Edversity</h3>
-                        <p class="project-description">Edversity is an innovative online learning platform that connects 
+                        <p class="project-description">An innovative online learning platform that connects 
                             passionate teachers with eager students, offering a wide range of courses to explore and grow at your own pace.</p>
                     </div>
                     <div class="project-technologies"> <!-- Modified -->
                         <div>
-                            <h4>Languages and Technologies:</h4>
+                            <h4>Tools and Technologies:</h4>
                             <div class="tech-icons">
                                 <i class="fab fa-node-js"></i>
                                 <img src="images/postgresql.svg" alt="PostgreSQL Logo" class="tech-logo">
@@ -149,9 +140,9 @@
 
                 <div class="project-card"> <!-- Modified -->
                     <div class="project-label">Course</div> <!-- Label added -->
-                    <div>
+                    <div class="mt-4">
                         <h3>Hayu Nubes</h3>
-                        <p class="project-description">This project is a strategy game that simulates the daily 
+                        <p class="project-description">A strategy game that simulates the daily 
                             tasks of a computer assembler, including managing customer orders, purchasing and 
                             installing components, handling inventory, and delivering the final builds to customers. 
                             The game is played through a command line interface.
@@ -159,7 +150,7 @@
                     </div>
                     <div class="project-technologies"> <!-- Modified -->
                         <div>
-                            <h4>Languages and Technologies:</h4>
+                            <h4>Tools and Technologies:</h4>
                             <div class="tech-icons">
                                 <img src="images/c_lang.svg" alt="C Language Logo" class="tech-logo" style="height: 24px;"> <!-- MySQL logo -->
                             </div>
@@ -194,5 +185,20 @@
     <footer>
         <p>&copy; 2024 Relieyan Hilman. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function scrollLeft1() {
+            const container = document.getElementById('scroll-container');
+            container.scrollBy({ left: -260, behavior: 'smooth' }); // Scroll 300px to the left
+        }        
+
+        function scrollRight() {
+            const container = document.getElementById('scroll-container');
+            container.scrollBy({ left: 260, behavior: 'smooth' }); // Scroll 300px to the right
+        }
+    </script>
+
 </body>
 </html>
