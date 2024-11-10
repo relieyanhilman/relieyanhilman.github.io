@@ -240,8 +240,9 @@ main#carousel{
     /* pointer-events: none; */
 }
 
-#projects input{
+#projects > input{
     align-self: center;
+    accent-color: #8c7a6b
 }
 
 div.item{
@@ -317,4 +318,13 @@ input:nth-of-type(5){
 
 input:nth-of-type(5):checked ~ main#carousel{
     --position: 5;
+}
+
+#contact a{
+    text-decoration: underline;
+    color: #b69b7c;
+}
+
+#contact a:hover{
+    color: #8c7a6b;
 }
