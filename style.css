@@ -274,9 +274,9 @@ div.item:nth-of-type(4){
 div.item:nth-of-type(5){
     --offset: 5;
 }
-div.item:nth-of-type(6){
+/* div.item:nth-of-type(6){
     --offset: 6;
-}
+} */
 
 input:nth-of-type(1){
     grid-column: 2 / 3;
@@ -323,14 +323,14 @@ input:nth-of-type(5):checked ~ main#carousel{
     --position: 5;
 }
 
-input:nth-of-type(6){
+/* input:nth-of-type(6){
     grid-column: 7 / 8;
     grid-row: 2 / 3;
-}
+} */
 
-input:nth-of-type(6):checked ~ main#carousel{
+/* input:nth-of-type(6):checked ~ main#carousel{
     --position: 6;
-}
+} */
 
 #contact a{
     text-decoration: underline;
